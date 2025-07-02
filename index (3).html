@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Simplificado</title>
+</head>
+<body>
+    <h1>Cadastro de Informações Pessoais</h1>
+
+    <form>
+
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome completo:</label>
+            <input id="nome" type="text" placeholder="Seu nome completo" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input id="email" type="email" placeholder="exemplo@email.com" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input id="senha" type="password" placeholder="Crie uma senha" required><br><br>
+
+            <label for="salario">Renda mensal:</label>
+            <input id="salario" type="text" placeholder="Digite sua renda" required><br><br>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero">
+                <option value="">Selecione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <!-- INFORMAÇÕES FAMILIARES -->
+        <fieldset>
+            <legend>Informações Familiares</legend>
+
+            <p>Você tem responsáveis legais registrados?</p>
+
+            <input type="radio" id="temPaisSim" name="pais" value="Sim">
+            <label for="temPaisSim">Sim</label>
+
+            <input type="radio" id="temPaisNao" name="pais" value="Não">
+            <label for="temPaisNao">Não</label>
+
+            <br><br>
+
+            <label for="nomePai">Nome do responsável 1:</label>
+            <input id="nomePai" type="text" placeholder="Nome do pai ou responsável"><br><br>
+
+            <label for="nomeMae">Nome do responsável 2:</label>
+            <input id="nomeMae" type="text" placeholder="Nome da mãe ou outro responsável"><br><br>
+        </fieldset>
+
+        <br>
+
+        <!-- ELETRODOMÉSTICOS -->
+        <fieldset>
+            <legend>Equipamentos Domésticos</legend>
+
+            <p>Marque os itens que você possui e indique a quantidade:</p>
+
+            <input type="checkbox" id="tv" name="itens" value="TV">
+            <label for="tv">Televisão</label>
+            <input type="number" name="qtd_tv" min="0" placeholder="Qtd."><br><br>
+
+            <input type="checkbox" id="pc" name="itens" value="Computador">
+            <label for="pc">Computador</label>
+            <input type="number" name="qtd_pc" min="0" placeholder="Qtd."><br><br>
+
+            <input type="checkbox" id="microondas" name="itens" value="Microondas">
+            <label for="microondas">Micro-ondas</label>
+            <input type="number" name="qtd_microondas" min="0" placeholder="Qtd."><br><br>
+
+            <input type="checkbox" id="geladeira" name="itens" value="Geladeira">
+            <label for="geladeira">Geladeira</label>
+            <input type="number" name="qtd_geladeira" min="0" placeholder="Qtd."><br><br>
+
+            <input type="checkbox" id="airfryer" name="itens" value="AirFryer">
+            <label for="airfryer">AirFryer</label>
+            <input type="number" name="qtd_airfryer" min="0" placeholder="Qtd."><br><br>
+
+            <input type="checkbox" id="fogao" name="itens" value="Fogao">
+            <label for="fogao">Fogão</label>
+            <input type="number" name="qtd_fogao" min="0" placeholder="Qtd."><br><br>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Finalizar Cadastro">
+    </form>
+</body>
+</html>
